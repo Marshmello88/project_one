@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/046a8e7919.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/style.css" type="text/css" />
     <title>Margarita Neibauere - Resume</title>
@@ -17,64 +20,84 @@
     <div class="jumbotron" style="height:100vh;">
         <!--https://stackoverflow.com/questions/31703153/bootstrap-jumbotron-full-width-and-height-of-window-with-background-image. This makes sure that the jumbotron covers the whole width and length of the page.-->
 
-<!------------------------------NAVIGATION BAR---------------------------------------------->
+        <!-- NAVIGATION BAR -->
         <nav class="navbar navbar-dark bg-transparent">
 
-<!---------------------------- COLLAPSE BUTTON---------------------------------------------->
+            <!-- COLLAPSE BUTTON -->
 
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> 
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation"> 
 
-<!------------------------------NEED TO REPLACE THE HAMBURGER ICON WITH THIS ONE----------->
-  <i class="fas fa-chevron-down"></i>
+<!-- HAMBURGER ICON REPLACED BY CHEVRON DOWN -->
+  <i class="fas fa-chevron-down button-icon"></i>
   
-  <span class="navbar-toggler-icon"></span>
   </button>
 
-<!--------------------------COLLAPSIBLE CONTENT------------------------------------------->
-            <div class="collapse navbar-collapse" id="#myNavbar">
+            <!-- COLLAPSIBLE CONTENT -->
+            <div class="collapse navbar-collapse" id="myNavbar">
 
-<!----------------------------LINKS-------------------------------------------------------->
+                <!-- LINKS -->
 
                 <ul class="navbar-nav mr-auto">
-                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                    <li class="active nav-item mr-2 collapsible-item">
+                        <a class="nav-link" href="/">About</a>
+                    </li>
+                    <li class="active nav-item mr-2 collapsible-item">
+                        <a class="nav-link" href="/">Resume</a>
+                    </li>
+                    <li class="active nav-item mr-2 collapsible-item">
+                        <a class="nav-link" href="/">Contact</a>
+                    </li>
                 </ul>
-<!----------------------------END LINKS-------------------------------------------------->
-            </div>
-<!----------------------------END COLLAPSIBLE CONTENT------------------------------------->
-        </nav>
-        
-<!---------------------------- END NAVIGATION BAR------------------------------------------>
-        
-<!-------------------------------------SOURCES------------------------------->
-<!--https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse.https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/-->
-<!--The .collapse class indicates a collapsible element (a <div> in our example); this is the content that will be shown or hidden with a click of a button. To control (show/hide) the collapsible content, add the data-toggle="collapse" attribute to an <a> or a <button> element. Then add the data-target="#id" attribute to connect the button with the collapsible content (<div id="demo">).https://www.w3schools.com/bootstrap/bootstrap_collapse.asp-->
-<!--When authors use collapsible content, for example, to hide navigation menus or lists of content, the triggering link or button should indicate to screen reader users whether the collapsable content below is in the expanded or in the collapsed state. The aria-expanded attribute is used for this purpose. Where to indicate that it is open?-->
-<!--https://skywalkapps.github.io/bootstrap-navbar-toggle/. -->
-       
 
-<!-------------------------------------MAIN PAGE------------------------------------------->
+                <!-- END LINKS -->
+
+            </div>
+
+            <!-- END COLLAPSIBLE CONTENT -->
+
+        </nav>
+
+        <!-- END NAVIGATION BAR -->
+
+        <!-- SOURCES -->
+        <!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse.https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/-->
+        <!-- The .collapse class indicates a collapsible element (a <div> in our example); this is the content that will be shown or hidden with a click of a button. To control (show/hide) the collapsible content, add the data-toggle="collapse" attribute to an <a> or a <button> element. Then add the data-target="#id" attribute to connect the button with the collapsible content (<div id="demo">).https://www.w3schools.com/bootstrap/bootstrap_collapse.asp-->
+        <!-- When authors use collapsible content, for example, to hide navigation menus or lists of content, the triggering link or button should indicate to screen reader users whether the collapsable content below is in the expanded or in the collapsed state. The aria-expanded attribute is used for this purpose. Where to indicate that it is open?-->
+        <!-- https://skywalkapps.github.io/bootstrap-navbar-toggle/. -->
+
+
+        <!-- MAIN PAGE -->
+
         <div class="container">
             <h1>Margarita Neibauere</h1>
-            <p>Resume
-                </>
+            <p>Resume</p>
         </div>
     </div>
 
-    <div class="background-color-white">
-        <div class="container">
+    <!--  ABOUT SECTION -->
+
+    <div class="background-color-smoke">
+        <div class="container my-profile">
+            <h2> My Passions & Personality.
+                <h2>
+        </div>
+        <hr class="orange-border">
+
+        <!-- IS IT OK TO USE TWO SEPERATE CONTAINERS HERE? -->
+        <div class="container profile-section">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 about-me">
                     <h3>About me</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </>
+                    </p>
                 </div>
-                <div class="col-md-4">
-                    <img src="https://66.media.tumblr.com/baea33b98e5aa66abd0e5da888d06c44/tumblr_pkw4y0EZTh1uk7v3v_540.jpg" class="img-fluid catface">
+                <div class="col-md-4 text-center profile-pic">
+                    <img src="https://66.media.tumblr.com/baea33b98e5aa66abd0e5da888d06c44/tumblr_pkw4y0EZTh1uk7v3v_540.jpg" class="img-fluid catface" width="246" height="246" alt="cat image">
                     <!--With Bootstrap 4 you must use use class="img-fluid" to avoid overlap of the image with the other column, class="img-responsive" will work in 3.x.-->
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 personal-info">
+                    <!-- WHY DONT THE MARGIN BOTTOM WORK HERE? -->
                     <h3>Personal Information</h3>
                     <div class="personal-info-item">
                         <div class="key">
@@ -113,14 +136,108 @@
             </div>
         </div>
     </div>
+
+    <!-- SOCIAL LINKS -->
+
+    <!--<div class="text-center"> 
+  <h4 class="title-social-links"> Look me up on...</h4>
+    <ul class="list-inline"> 
+       <!--the unordered list has the bootstrap default list inline class, which means that every list item has to have this same class also
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                    </li>
+    </ul> -->
+    </div>
+
+    <!-- resume page
+
     <div class="background-color-grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4>
-<h3>Resume</h3>
-              </div>
+        <div class="container content">
+            <h1> Margarita Neibauere
+                <small>Resume<small>
+                  </h1>
+               <h3>Career History</h3>
+               <div class="position">
+                 <span class="title">Software Architect — Extend</span>
+                 <span class="time-period">August 2018 to Present</span>
             </div>
-          </div>
+            <div class="position">
+                 <span class="title">Software Architect — Extend</span>
+                 <span class="time-period">August 2018 to Present</span>
+            </div>
+            <div class="position">
+                 <span class="title">Software Architect — Extend</span>
+                 <span class="time-period">August 2018 to Present</span>
+            </div>
+            <div class="position">
+                 <span class="title">Software Architect — Extend</span>
+                 <span class="time-period">August 2018 to Present</span>
+            </div>
+            <div class="position">
+                 <span class="title">Software Architect — Extend</span>
+                 <span class="time-period">August 2018 to Present</span>
+            </div>
         </div>
+    </div> -->
+
+    <!-- CONTACT PAGE -->
+
+    <div class="background-color-grey">
+        <h2 class="text-center contact-title">Look me up on:</h2>
+        <div class="container contact-me">
+            <hr class="gap">
+            <div class="row contact-list">
+                <div class="col-md-6">
+<ul class="no-bullets" style="list-style-type:none"> 
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/9gag/?hl=en">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="no-bullets" style="list-style-type:none">
+                        <li>
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            <span class="sr-only">Linkedin</span>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+             
+            </div>
+              <hr class="gap">
+        </div>
+    </div>
+
+
+
+
 </body>
+
 </html>

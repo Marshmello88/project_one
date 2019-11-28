@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+body {
+    font-family: 'Exo', sans-serif;
+}
+
 /*---------------------------------------------------HOME PAGE--------------------------------------------*/
 
 .jumbotron {
@@ -30,15 +34,46 @@
 
 /*-------------------------------------NAVIGATION BAR-----------------------------------------*/
 
-/* Navbar */
+.navbar {
+    border: 0px;
+    position: absolute;
+    width: 110px;
+}
+
+.collapsible-item {
+    display: block;
+    height: 80px;
+}
+
+.collapsible-item a {
+    display: block;
+    height: 80px;
+    text-align: right;
+    padding-top: 30px;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.button-icon {
+    color: white;
+}
+
+.collapsible-item {
+    text-align: right;
+}
 
 /*----------------------------------------Personal Information----------------------------------*/
 
-.background-color-white {
-    height: 100vh;
+.background-color-smoke {
     /*this is so the profile page covers the entire page*/
-    background-color: white;
+    background-color: whitesmoke;
     margin-top: 200px;
+}
+
+.background-color-smoke .container {
+    max-width: 1280px;
+    padding: 35px 180px;
 }
 
 .personal-info-item .key {
@@ -53,9 +88,120 @@
     border-radius: 50%;
 }
 
+.my-profile {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -100px;
+    color: #9370DB;
+}
+
+.about-me-row {}
+
+.about-me h3 {
+    color: #9370DB;
+}
+
+.about-me p {
+    margin-top: 30px;
+}
+
+.personal-info h3 {
+    color: #9370DB;
+}
+
+.persnal-info-item {
+    margin-top: 30px;
+}
+
+.title-social-links {
+    float: left;
+    width: 8.5em;
+}
+
 /*------------------------------------------------RESUME-----------------------------------------*/
 
 .background-color-grey {
     background-color: #DCDCDC;
     height: 100vh;
 }
+
+/* tomorrow: plus personal profile*/
+
+/*-------------------RESUME--------*/
+
+.content {
+    margin: 0;
+    border-right: 1px solid #efefef;
+    font-size: larger;
+}
+
+h1 small {
+    display: block;
+}
+
+.position {
+    margin-bottom: 25px;
+    margin-left: -40px;
+    padding-left: 70px;
+    border-top: 3px solid ORANGE;
+}
+
+.title {
+    display: block;
+    margin-top: -10px;
+    margin-left: -10px;
+    padding-left: 10px;
+}
+
+.time-period {
+    display: block;
+    font-size: smaller;
+    color: #999;
+}
+
+
+.orange-border {
+    border: 0;
+    height: 2px;
+    /*width: 150px;*/
+    background: orange;
+    display: block;
+    clear: both;
+    margin: 0 2em;
+    border-radius: 0.25em;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    align: center;
+    /*HOW*/
+}
+
+/*---------------------------CONTACT PAGE ------------------------------*/
+
+.background-color-grey {
+    background-color: #708090;
+}
+
+
+.gap {
+    margin: 40px 0;
+}
+
+.contact-title {
+   color: #fff;
+   font-weight: 300;
+}
+
+.contact-list a i {
+    color: #fff;
+    margin: 10px;
+}
+
+.contact-me {
+ max-width: 1280px; 
+ padding: 35px 180px; 
+}
+
+/*#contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
+#contact a .icon { float: left; margin-right: 20px; }
+#contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
+}*/
