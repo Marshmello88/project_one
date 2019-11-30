@@ -2,9 +2,13 @@
 
 body {
     font-family: 'Exo', sans-serif;
+    text-color: #fff;
+    font-size: 14px;
+	/*margin:0;
+	padding:0;*/
 }
 
-/*---------------------------------------------------HOME PAGE--------------------------------------------*/
+/*---HOME PAGE-----*/
 
 .jumbotron {
     background: no-repeat center right fixed url("https://wallpaperaccess.com/full/439038.jpg");
@@ -65,16 +69,16 @@ body {
 
 /*----------------------------------------Personal Information----------------------------------*/
 
-.background-color-smoke {
-    /*this is so the profile page covers the entire page*/
+/*.background-color-smoke {
+    /*this is so the profile page covers the entire page
     background-color: whitesmoke;
     margin-top: 200px;
 }
 
 .background-color-smoke .container {
     max-width: 1280px;
-    padding: 35px 180px;
-}
+    padding: 35px 180px;*/
+} 
 
 .personal-info-item .key {
     display: inline-block;
@@ -90,8 +94,7 @@ body {
 
 .my-profile {
     text-align: center;
-    margin-bottom: 100px;
-    margin-top: -100px;
+    margin-bottom: 50px;
     color: #9370DB;
 }
 
@@ -122,10 +125,8 @@ body {
 
 .background-color-grey {
     background-color: #DCDCDC;
-    height: 100vh;
 }
 
-/* tomorrow: plus personal profile*/
 
 /*-------------------RESUME--------*/
 
@@ -160,48 +161,69 @@ h1 small {
 }
 
 
-.orange-border {
-    border: 0;
-    height: 2px;
-    /*width: 150px;*/
-    background: orange;
-    display: block;
-    clear: both;
-    margin: 0 2em;
-    border-radius: 0.25em;
-    margin-bottom: 30px;
-    margin-top: -50px;
-    align: center;
-    /*HOW*/
+/*---------------------------CONTACT PAGE ----*/
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    /*So it can grow beyond 120px if for some reason the about us text extends or pushes beyond that*/
+    margin: 0;
 }
 
-/*---------------------------CONTACT PAGE ------------------------------*/
+footer .container {
+  padding: 40px 170px;
+  /* pushes the link items more towards the middle */
+}
 
-.background-color-grey {
-    background-color: #708090;
+#contact {
+  padding-bottom: 200px;
+  margin-top: 50px;
+  padding-top: 40px;
 }
 
 
-.gap {
-    margin: 40px 0;
+#contact h2 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 25px;
 }
 
-.contact-title {
-   color: #fff;
-   font-weight: 300;
+#contact .quote {
+ font-size: 20px;
+ opacity: 0.5; 
+ font-weight: 100;
+ margin-bottom: 25px;
 }
 
-.contact-list a i {
-    color: #fff;
-    margin: 10px;
+/* Link items */
+
+#contact .row *{
+color: #fff;
+/*It means apply those styles to all elements. Could not change the color of the links otherwise. How to achieve it without the "*" symbol?*/
 }
 
-.contact-me {
- max-width: 1280px; 
- padding: 35px 180px; 
+#contact .row {
+  padding-top: 25px;
 }
 
-/*#contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }
-#contact a .icon { float: left; margin-right: 20px; }
-#contact a:hover { opacity: 1; filter:alpha(opacity=100); text-decoration: none; }
-}*/
+#contact a {
+  display: block;
+  /* A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise (by adding a float declaration to another element, for instance)*/
+  margin-bottom: 18px;
+  /* Why doesn't margin bottom display 18 px without first adding display: block? */
+  line-height: 200%;
+  /*The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element.*/
+  opacity: 0.6; 
+}
+
+#contact a i {
+margin-right: 10px;
+/* creates space between the icon and the text */
+font-size: 25px;
+}
+
+
+#contact a:hover { opacity: 1; text-decoration: none; 
+/*text-decoration set to none, otherwise the underline appears on hover*/
+} 
