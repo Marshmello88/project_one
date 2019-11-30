@@ -4,9 +4,22 @@ body {
     font-family: 'Exo', sans-serif;
     text-color: #fff;
     font-size: 14px;
-	/*margin:0;
+    background: #7F9AC7;
+    /*margin:0;
 	padding:0;*/
 }
+
+h2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.container {
+    padding: 40px 170px;
+    /* pushes all container items more towards the middle */
+}
+
 
 /*---HOME PAGE-----*/
 
@@ -67,163 +80,118 @@ body {
     text-align: right;
 }
 
-/*----------------------------------------Personal Information----------------------------------*/
+/*----Personal Information------------------*/
 
-/*.background-color-smoke {
-    /*this is so the profile page covers the entire page
-    background-color: whitesmoke;
-    margin-top: 200px;
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    /* so it will start and end with a new line and occupy the entirety of the horizontal space */
+    clear: both;
+    /* Clear to both so that no other items can appear at either side of it in case we were using floats*/
 }
 
-.background-color-smoke .container {
-    max-width: 1280px;
-    padding: 35px 180px;*/
-} 
+.personal-info-item .key,
+.personal-info-item .value {
+    display: inline-block;
+    /*A div occupies the maximum horizontal space. An inline block allows to put two divs side-by-side, and that's what we want to do here.*/
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
 
 .personal-info-item .key {
-    display: inline-block;
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+    /*Vertical-align to top so that it hugs the top of the <div> as much as possible.*/
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
 }
 
 .personal-info-item .value {
-    display: inline-block;
+    position: relative;
+    width: 60%;
+    /*This will combine to 90% and still allow for some breathing space on either side of the key value pairing.*/
 }
 
 .catface {
     border-radius: 50%;
 }
 
-.my-profile {
-    text-align: center;
-    margin-bottom: 50px;
-    color: #9370DB;
-}
-
-.about-me-row {}
-
-.about-me h3 {
-    color: #9370DB;
-}
-
-.about-me p {
-    margin-top: 30px;
-}
-
-.personal-info h3 {
-    color: #9370DB;
-}
-
-.persnal-info-item {
-    margin-top: 30px;
-}
-
-.title-social-links {
-    float: left;
-    width: 8.5em;
-}
-
-/*------------------------------------------------RESUME-----------------------------------------*/
-
-.background-color-grey {
-    background-color: #DCDCDC;
-}
+.uppercase {
+    text-transform: uppercase;
 
 
-/*-------------------RESUME--------*/
+    /*-------------RESUME-----------*/
+    /*-------------------END RESUME--------*/
+    /*---------------------------CONTACT PAGE ----*/
+    footer {
+        background-color: #525252;
+        color: #fafafa;
+        min-height: 120px;
+        /*So it can grow beyond 120px if for some reason the about us text extends or pushes beyond that*/
+        margin: 0;
+    }
 
-.content {
-    margin: 0;
-    border-right: 1px solid #efefef;
-    font-size: larger;
-}
-
-h1 small {
-    display: block;
-}
-
-.position {
-    margin-bottom: 25px;
-    margin-left: -40px;
-    padding-left: 70px;
-    border-top: 3px solid ORANGE;
-}
-
-.title {
-    display: block;
-    margin-top: -10px;
-    margin-left: -10px;
-    padding-left: 10px;
-}
-
-.time-period {
-    display: block;
-    font-size: smaller;
-    color: #999;
-}
-
-
-/*---------------------------CONTACT PAGE ----*/
-
-footer {
-    background-color: #525252;
-    color: #fafafa;
-    min-height: 120px;
-    /*So it can grow beyond 120px if for some reason the about us text extends or pushes beyond that*/
-    margin: 0;
-}
-
-footer .container {
+    /*footer .container {
   padding: 40px 170px;
-  /* pushes the link items more towards the middle */
-}
+  }
+  putting this rule in the body instad*/
+    #contact {
+        padding-bottom: 200px;
+        margin-top: 50px;
+        padding-top: 40px;
+    }
 
-#contact {
-  padding-bottom: 200px;
-  margin-top: 50px;
-  padding-top: 40px;
-}
 
-
-#contact h2 {
+    /*#contact h2 {
   font-size: 50px;
   font-weight: 300;
   margin-bottom: 25px;
-}
+}*/
+    #contact .quote {
+        font-size: 20px;
+        opacity: 0.5;
+        font-weight: 100;
+        margin-bottom: 25px;
+    }
 
-#contact .quote {
- font-size: 20px;
- opacity: 0.5; 
- font-weight: 100;
- margin-bottom: 25px;
-}
+    /* Link items */
+    #contact .row * {
+        color: #fff;
+        /*It means apply those styles to all elements. Could not change the color of the links otherwise. How to achieve it without the "*" symbol?*/
+    }
 
-/* Link items */
+    #contact .row {
+        padding-top: 25px;
+    }
 
-#contact .row *{
-color: #fff;
-/*It means apply those styles to all elements. Could not change the color of the links otherwise. How to achieve it without the "*" symbol?*/
-}
+    #contact a {
+        display: block;
+        /* A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise (by adding a float declaration to another element, for instance)*/
+        margin-bottom: 18px;
+        /* Why doesn't margin bottom display 18 px without first adding display: block? */
+        line-height: 200%;
+        /*The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element.*/
+        opacity: 0.6;
+    }
 
-#contact .row {
-  padding-top: 25px;
-}
-
-#contact a {
-  display: block;
-  /* A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise (by adding a float declaration to another element, for instance)*/
-  margin-bottom: 18px;
-  /* Why doesn't margin bottom display 18 px without first adding display: block? */
-  line-height: 200%;
-  /*The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element.*/
-  opacity: 0.6; 
-}
-
-#contact a i {
-margin-right: 10px;
-/* creates space between the icon and the text */
-font-size: 25px;
-}
+    #contact a i {
+        margin-right: 10px;
+        /* creates space between the icon and the text */
+        font-size: 25px;
+    }
 
 
-#contact a:hover { opacity: 1; text-decoration: none; 
-/*text-decoration set to none, otherwise the underline appears on hover*/
-} 
+    #contact a:hover {
+        opacity: 1;
+        text-decoration: none;
+    }
+    /*text-decoration set to none, otherwise the underline appears on hover*/
+
+/*------END CONTACT PAGE -----*/
