@@ -17,26 +17,19 @@
 </head>
 
 <body>
-    <div class="jumbotron" style="height:100vh;">
-        <!--https://stackoverflow.com/questions/31703153/bootstrap-jumbotron-full-width-and-height-of-window-with-background-image. This makes sure that the jumbotron covers the whole width and length of the page.-->
 
+    <!--********LANDING PAGE*******-->
+    <header class="jumbotron" id="landing-page">
         <!-- NAVIGATION BAR -->
         <nav class="navbar navbar-dark bg-transparent">
-
             <!-- COLLAPSE BUTTON -->
-
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation"> 
-
 <!-- HAMBURGER ICON REPLACED BY CHEVRON DOWN -->
   <i class="fas fa-chevron-down button-icon"></i>
-  
   </button>
-
             <!-- COLLAPSIBLE CONTENT -->
             <div class="collapse navbar-collapse" id="myNavbar">
-
                 <!-- LINKS -->
-
                 <ul class="navbar-nav mr-auto">
                     <li class="active nav-item mr-2 collapsible-item">
                         <a class="nav-link" href="/">About</a>
@@ -48,15 +41,10 @@
                         <a class="nav-link" href="/">Contact</a>
                     </li>
                 </ul>
-
                 <!-- END LINKS -->
-
             </div>
-
             <!-- END COLLAPSIBLE CONTENT -->
-
         </nav>
-
         <!-- END NAVIGATION BAR -->
 
         <!-- SOURCES -->
@@ -64,17 +52,13 @@
         <!-- The .collapse class indicates a collapsible element (a <div> in our example); this is the content that will be shown or hidden with a click of a button. To control (show/hide) the collapsible content, add the data-toggle="collapse" attribute to an <a> or a <button> element. Then add the data-target="#id" attribute to connect the button with the collapsible content (<div id="demo">).https://www.w3schools.com/bootstrap/bootstrap_collapse.asp-->
         <!-- When authors use collapsible content, for example, to hide navigation menus or lists of content, the triggering link or button should indicate to screen reader users whether the collapsable content below is in the expanded or in the collapsed state. The aria-expanded attribute is used for this purpose. Where to indicate that it is open?-->
         <!-- https://skywalkapps.github.io/bootstrap-navbar-toggle/. -->
-
-
-        <!-- MAIN PAGE -->
-
         <div class="container">
             <h1>Margarita Neibauere</h1>
             <p>Resume</p>
         </div>
-    </div>
+    </header>
 
-    <!--  ABOUT SECTION -->
+    <!--*********  ABOUT SECTION **********-->
     <div class="container" id="my-profile">
         <section class="col-md-12">
             <h2 class="text-center"> My Passions & Personality:
@@ -92,61 +76,184 @@
                 <img src="https://66.media.tumblr.com/baea33b98e5aa66abd0e5da888d06c44/tumblr_pkw4y0EZTh1uk7v3v_540.jpg" class="img-fluid catface" width="246" height="246" alt="cat image">
                 <!--With Bootstrap 4 you must use use class="img-fluid" to avoid overlap of the image with the other column, class="img-responsive" will work in 3.x.-->
             </section>
-            <section class="col-md-4">
-                <h3>Details</h3>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Name:
-                        </p>
+            <div class="row">
+                <section class="col-md-4">
+                    <h3>Details</h3>
+                    <div class="personal-info-item">
+                        <div class="key">
+                            <p class="uppercase">
+                                Name:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p>
+                                Maggy
+                            </p>
+                        </div>
                     </div>
-                    <div class="value">
-                        <p>
-                            Maggy
-                        </p>
+                    <div class="personal-info-item">
+                        <div class="key">
+                            <p class="uppercase">
+                                Address:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p>
+                                2034LP Haarlem, NL
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Address:
-                        </p>
+                    <div class="personal-info-item">
+                        <div class="key">
+                            <p class="uppercase">
+                                Age:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p>
+                                31
+                            </p>
+                        </div>
                     </div>
-                    <div class="value">
-                        <p>
-                            2034LP Haarlem, NL
-                        </p>
+                    <div class="personal-info-item">
+                        <div class="key">
+                            <p class="uppercase">
+                                Email:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p>
+                                m.neibauere@gmail.com
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Age:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            31
-                        </p>
-                    </div>
-                </div>
-                <div class="personal-info-item">
-                    <div class="key">
-                        <p class="uppercase">
-                            Email:
-                        </p>
-                    </div>
-                    <div class="value">
-                        <p>
-                            m.neibauere@gmail.com
-                        </p>
-                    </div>
-                </div>
-            </section>
+                </section>
+
+            </div>
         </div>
     </div>
 
-    <!-- CONTACT PAGE -->
+    <!--**********  RESUME PAGE *************-->
+    <div class="background-color-green">
+        <section class="col-md-12">
+            <h2 class="text-center"> Curriculum Vitae </h2>
+        </section>
+        <hr>
+        <h3 class="text-center">Education</h3>
+
+        <!--education -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Code Institute (deeltijd opleiding)</h5>
+                    <p>augustus 2019 – heden</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Full Stack Software Development</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Universiteit van Amsterdam </h5>
+                    <p>2013 – 2014</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Master European Studies</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Universiteit van Amsterdam </h5>
+                    <p>2008 – 2013</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Bachelor Europese Studies</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Linnaeus College</h5>
+                    <p>2001 – 2007</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>VWO</h5>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- end education-->
+
+        <!-- experience -->
+        <h3 class="text-center">Work Experience</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Deutsche Bank</h5>
+                    <p>mei 2018 – juni 2019</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Senior Know Your Client (KYC) Operator </h5>
+                    <p>Als KYC-analyst assisteerde ik de bedrijfseenheden van de bank en beheerde ik alle KYC-vereisten met passende governance en controles.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Deutsche Bank</h5>
+                    <p>mei 2018 – juni 2019</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Senior Know Your Client (KYC) Operator </h5>
+                    <p>Als KYC-analyst assisteerde ik de bedrijfseenheden van de bank en beheerde ik alle KYC-vereisten met passende governance en controles.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>LeasePlan</h5>
+                    <p>januari 2017 – februari 2018</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Medewerker Contract Implementatie </h5>
+                    <p>In deze functie ondersteunde ik de afdeling Contract Implementatie bij alle activiteiten die het opstellen van contracten mogelijk maken.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>LeasePlan</h5>
+                    <p>oktober 2016 – januari 2017</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Medewerker Schade en Service Administratie </h5>
+                    <p>In deze functie was ik verantwoordelijk voor het uitvoeren van verschillende operationele processen. Daarnaast behandelde ik diverse administratieve activiteiten m.b.t. schade, brandstof, motorrijtuigenbelasting, verzekeringen, beschikkingen,
+                        reparatie en onderhoud, vervangend vervoer. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Private Label Manufacturers Association</h5>
+                    <p>maart 2016 – augustus 2016</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Assistant Visitor Registration</h5>
+                    <p>In deze functie was ik verantwoordelijk voor het bevestigen van bedrijfsgegevens van de registranten en de facturatie. Daarnaast ondersteunde ik mijn afdeling met bijkomende administratieve lasten. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Peace Brigades International</h5>
+                    <p>maart 2015 – augustus 2015</p>
+                </div>
+                <div class="col-md-8">
+                    <h5>Stagiaire Shelter City Utrecht </h5>
+                    <p>Shelter City is een landelijk initiatief van Justice and Peace Nederland in samenwerking met Nederlandse steden en met het ministerie van Buitenlandse Zaken om mensenrechtenverdedigers te beschermen. Tijdens mijn stage was ik verantwoordelijk
+                        voor de Utrechtse implementatie van het project in zowel de inhoudelijke als (financieel) administratieve zin.</p>
+                </div>
+            </div>
+
+        </div>
+        <!--end experience -->
+    </div>
+
+    <!-- ********* CONTACT PAGE ********** -->
     <footer>
         <div class="container" id="contact">
             <div class="col-12">
