@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: 'Exo', sans-serif;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     background: #fff;
 	/*margin:0;
 	padding:0;*/
@@ -18,18 +18,22 @@ h2 {
   margin-bottom: 25px;
 }
 
+
 h5 {
   font-weight: 700;
 }
 
 .container {
-  padding: 40px 170px;
+  padding: 50px 170px;
   /* pushes all container items more towards the middle */
 }
 
-hr {
-  
-}
+hr { 
+  margin: 40px 0px;
+  border-color: #7E9E87; 
+  opacity: 0.3;
+ }
+
 
 /*--------LANDING PAGE-----*/
 
@@ -78,6 +82,7 @@ hr {
     padding-top: 30px;
     font-weight: 400;
     color: #ffffff;
+
 }
 
 .button-icon {
@@ -135,6 +140,9 @@ width: 60%;
     text-transform: uppercase;
 }
 
+#my-profile h2, h3 {
+  color:#7B8C89
+}
 /*-------------RESUME-----------*/
 
 
@@ -160,9 +168,8 @@ width: 60%;
 
 
 #contact {
-  padding-bottom: 200px;
+  padding-bottom: 190px;
   margin-top: 50px;
-  padding-top: 40px;
 }
 
 
@@ -172,11 +179,16 @@ width: 60%;
   margin-bottom: 25px;
 }*/
 
-#contact .quote {
+#contact .quote,
+#my-profile .quote {
  font-size: 20px;
- opacity: 0.5; 
- font-weight: 100;
+ opacity: 0.4; 
+ font-weight: 200;
  margin-bottom: 25px;
+}
+
+#my-profile .quote {
+  opacity: 1; 
 }
 
 /* Link items */
@@ -207,7 +219,7 @@ font-size: 25px;
 }
 
 
-#contact a:hover { opacity: 1; text-decoration: none; }
+#contact a:hover { opacity: 1; text-decoration: none; 
 /*text-decoration set to none, otherwise the underline appears on hover*/
 } 
 
@@ -222,6 +234,19 @@ font-size: 25px;
 .background-color-green h2 {
   padding-top: 40px;
 }
+
+.resume {
+  margin-bottom: 20px;
+}
+
+.resume h5,
+.location {
+color:#434D4B;
+}
+
+/*.resume p strong {
+  margin-bottom: .5rem;
+} why is this not working?*/
 
 /*-----------MEDIA QUERIES----------*/
 
