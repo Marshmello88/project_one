@@ -9,9 +9,10 @@ body {
     font-family: 'Exo', sans-serif;
     font-size: 0.938em;
     background: #fff;
-	/*margin:0;
-	padding:0;*/
+	margin:0;
+	padding:0;
 }
+ 
 
 h2 {
   font-size: 3.125rem;
@@ -19,17 +20,21 @@ h2 {
   margin-bottom: 25px;
 }
 
+h3 {
+    margin-bottom: 1.250em
+}
 
 h5 {
   font-weight: 700;
 }
 
 .my_custom_margin_padding {
-  padding: 50px 170px;
+max-width: 1280px; 
+  padding: 3.333rem 11.33rem;
 }
 
 hr { 
-  margin: 40px 0px;
+  margin: 35px 0px;
   border-color: #7E9E87; 
   opacity: 0.3;
  }
@@ -96,7 +101,7 @@ margin-bottom: 0px;
 /*----Personal Information------------------*/
 
 .personal-info-item {
-margin-bottom: 20px;
+margin-bottom: 1.333em;
 display: block;
 /* so it will start and end with a new line and occupy the entirety of the horizontal space */
 clear: both;
@@ -136,9 +141,10 @@ width: 60%;
     border-radius: 50%;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
+#my-profile .row > div { 
+    margin-bottom: 30px; 
+    }
+    /*.parent-class > .child-class*/
 
 #my-profile h2, h3 {
   color:#7B8C89
@@ -155,7 +161,7 @@ width: 60%;
  footer {
     background-color: #525252;
     color: #fafafa;
-    min-height: 120px;
+    /*min-height: 120px;*/
     /*So it can grow beyond 120px if for some reason the about us text extends or pushes beyond that*/
     margin: 0;
  }
@@ -167,10 +173,10 @@ width: 60%;
   putting this rule in the body instad*/
 
 
-#contact {
+/*#contact {
   padding-bottom: 190px;
   margin-top: 50px;
-}
+}*/
 
 
 /*#contact h2 {
@@ -180,14 +186,16 @@ width: 60%;
 }*/
 
 #contact .quote,
-#my-profile .quote {
+#my-profile .quote,
+#my-resume .quote {
  font-size: 1.25rem;
  opacity: 0.4; 
  font-weight: 200;
- margin-bottom: 25px;
+ /*margin-bottom: 25px;*/
 }
 
-#my-profile .quote {
+#my-profile .quote,
+#my-resume .quote {
   opacity: 1; 
 }
 
@@ -198,14 +206,14 @@ color: #fff;
 /*It means apply those styles to all elements. Could not change the color of the links otherwise. How to achieve it without the "*" symbol?*/
 }
 
-#contact .row {
+/*#contact .row {
   padding-top: 25px;
-}
+}*/
 
 #contact a {
   display: block;
   /* A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise (by adding a float declaration to another element, for instance)*/
-  margin-bottom: 18px;
+  /*margin-bottom: 18px;*/
   /* Why doesn't margin bottom display 18 px without first adding display: block? */
   line-height: 200%;
   /*The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element.*/
@@ -215,7 +223,7 @@ color: #fff;
 #contact a i {
 margin-right: 10px;
 /* creates space between the icon and the text */
-font-size: 25px;
+font-size: 20px;
 }
 
 
@@ -231,13 +239,17 @@ font-size: 25px;
   background-color:#B4CCC8;
 }
 
-.background-color-green h2 {
-  padding-top: 40px;
+#my-resume .resume > div {
+margin-bottom: 15px;
 }
 
-.resume {
+/*.background-color-green h2 {
+  padding-top: 40px;
+}*/
+
+/*.resume {
   margin-bottom: 20px;
-}
+}*/
 
 .resume h5,
 .location {
@@ -248,10 +260,57 @@ color:#434D4B;
   margin-bottom: .5rem;
 } why is this not working?*/
 
+#my-resume .row i {
+margin-right: 20px;
+/* creates space between the icon and the text */
+}
+
 /*-----------MEDIA QUERIES----------*/
+
+
 
 @media (max-width: 992px) {
   #landing-page{
         background-attachment: scroll;
     }
+}
+
+/*// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }*/
+
+/*
+@media (min-width: 992px) { 
+    .my_custom_margin_padding {
+  padding: 3.333rem 11.33rem;
+}*
+ }*/
+
+/*Large devices (desktops, 992px and up)
+ @media (min-width: 992px)
+..my_custom_margin_padding {
+    width: 970px;
+}*/
+
+/*Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .my_custom_margin_padding {
+  padding: 3.333rem 11.33rem;
+}
+ }*/
+
+ @media (max-width: 767px) {
+#my-profile .row * {
+    text-align: center;
+}
+}
+
+@media (max-width: 767px) {
+.my_custom_margin_padding {
+    padding: 60px 20px;
+    min-width: 280px;
+    /*gives more padding on small screen*/
+}
 }
