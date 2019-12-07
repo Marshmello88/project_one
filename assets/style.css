@@ -67,37 +67,6 @@ margin-bottom: 0px;
     font-weight: 300;
 }
 
-/*-------------------------------------NAVIGATION BAR-----------------------------------------*/
-
-.navbar {
-    border: 0px;
-    position: absolute;
-    width: 110px;
-}
-
-.collapsible-item {
-    display: block;
-    height: 80px;
-}
-
-.collapsible-item a {
-    display: block;
-    height: 80px;
-    text-align: right;
-    padding-top: 30px;
-    font-weight: 400;
-    color: #ffffff;
-
-}
-
-.button-icon {
-    color: white;
-}
-
-.collapsible-item {
-    text-align: right;
-}
-
 /*----Personal Information------------------*/
 
 .personal-info-item {
@@ -173,11 +142,17 @@ width: 60%;
   putting this rule in the body instad*/
 
 
-/*#contact {
+#contact {
   padding-bottom: 190px;
-  margin-top: 50px;
-}*/
+}
 
+#contact a {
+    margin-bottom: 1.333em;
+}
+
+.contact-item {
+    font-weight: 200;
+}
 
 /*#contact h2 {
   font-size: 50px;
@@ -217,7 +192,7 @@ color: #fff;
   /* Why doesn't margin bottom display 18 px without first adding display: block? */
   line-height: 200%;
   /*The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element.*/
-  opacity: 0.6; 
+  opacity: 0.7; 
 }
 
 #contact a i {
@@ -313,4 +288,112 @@ margin-right: 20px;
     min-width: 280px;
     /*gives more padding on small screen*/
 }
+}
+
+/* ----------- NAVIGATION BAR -------- */
+
+.maggy-nav {
+right:25px;
+width:250px;
+/* moves the navbar to the right hand side*/
+}
+
+.maggy-nav {
+    position: fixed;
+    background-color:rgba(17,17,17,.7);
+    border-radius: 0;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.nav {
+    display: block;
+    /* this is to overwrite flex*/
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.maggy-nav a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar-collapse{
+    /*position:absolute;*/
+    top:50%;
+    margin-top:-25%;
+    bottom: 0;
+}
+
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible; /*this section makes the dropdown menu visible*/
+}
+
+.maggy-nav .nav {
+    text-align: center;
+}
+
+
+#my-nav {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+@media (max-width: 767px) {
+.navbar-toggle {
+    background-color: #fff;
+}
+}
+
+
+@media (max-width: 767px) {
+.maggy-nav {
+    height: auto !important;
+    padding: 0 20px;
+    width: 100%;
+}
+}
+
+@media (max-width: 767px) {
+.navbar-toggle {
+    background-color: #fff;
+    margin-top: 16px;
+}
+}
+
+@media (min-width: 768px) {
+.navbar-toggle {
+    display: none;
+}
+}
+
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
 }
