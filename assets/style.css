@@ -4,6 +4,16 @@ html {
   font-size:100%; 
   } 
 
+.jumborow, .row {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+
+
+.container-fluid {
+padding-left: 0px;
+padding-right: 0px;
+}
 
 body {
     font-family: 'Exo', sans-serif;
@@ -29,7 +39,8 @@ h5 {
 }
 
 .my_custom_margin_padding {
-max-width: 1280px; 
+/*max-width: 1280px;*/
+  padding-right: 300px;
   padding: 3.333rem 11.33rem;
 }
 
@@ -38,6 +49,10 @@ hr {
   border-color: #7E9E87; 
   opacity: 0.3;
  }
+
+footer {
+    width:100%;
+}
 
 /*--------LANDING PAGE-----*/
 
@@ -127,8 +142,8 @@ width: 60%;
 
 /*---------------------------CONTACT PAGE ----*/
 
- footer {
-    background-color: #525252;
+ footer { 
+    background-color: /*#525252;*/#333333;
     color: #fafafa;
     /*min-height: 120px;*/
     /*So it can grow beyond 120px if for some reason the about us text extends or pushes beyond that*/
@@ -185,6 +200,11 @@ color: #fff;
   padding-top: 25px;
 }*/
 
+.contactrow .no-bullets {
+    list-style-type: none;
+    padding: 0px;
+}
+
 #contact a {
   display: block;
   /* A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise (by adding a float declaration to another element, for instance)*/
@@ -198,9 +218,18 @@ color: #fff;
 #contact a i {
 margin-right: 10px;
 /* creates space between the icon and the text */
-font-size: 20px;
+font-size: 24px;
 }
 
+.contactrow {
+    margin-right: -15px!important;
+    margin-left: -15px!important;
+}
+
+@media (min-width: 992px)
+.col-md-6 {
+    width: 50%;
+}
 
 #contact a:hover { opacity: 1; text-decoration: none; 
 /*text-decoration set to none, otherwise the underline appears on hover*/
@@ -290,7 +319,11 @@ margin-right: 20px;
 }
 }
 
+
 /* ----------- NAVIGATION BAR -------- */
+.navbar {
+    top: 0px;
+}
 
 .maggy-nav {
 right:25px;
@@ -344,12 +377,15 @@ width:250px;
     bottom: 0;
 }
 
+@media (min-width: 992px) { 
 .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible; /*this section makes the dropdown menu visible*/
 }
+}
+
 
 .maggy-nav .nav {
     text-align: center;
@@ -384,16 +420,44 @@ width:250px;
 }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 .navbar-toggle {
     display: none;
 }
 }
-
 
 .navbar-toggle .icon-bar {
     display: block;
     width: 22px;
     height: 2px;
     border-radius: 1px;
+}
+
+.collapse.show {
+    display: block;
+}
+
+.navbar-collapse.show {
+    overflow-y: auto;
+}
+
+
+.resume {
+ margin-bottom: 20px;
+}
+
+/*@media (max-width: 767px) {
+.resume {
+ margin-left: -15px!important;
+}*/
+
+#my-resume .locationfont {
+    font-weight: 500;
+    padding-left: 4px;
+}
+
+
+.maggy-nav a:hover {
+    text-decoration: none;
+    color: #FF7DC0;
 }
