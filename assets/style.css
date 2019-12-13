@@ -46,7 +46,7 @@ h5 {
 
 hr { 
   margin: 35px 0px;
-  border-color: #7E9E87; 
+  border-color: #7D7880; 
   opacity: 0.3;
  }
 
@@ -82,7 +82,7 @@ margin-bottom: 0px;
     font-weight: 300;
 }
 
-/*----Personal Information------------------*/
+/* -------------------------Personal Information------------------*/
 
 .personal-info-item {
 margin-bottom: 1.333em;
@@ -95,7 +95,7 @@ clear: both;
 .personal-info-item .key,
 .personal-info-item .value {
 display: inline-block;
-/*A div occupies the maximum horizontal space. An inline block allows to put two divs side-by-side, and that's what we want to do here.*/
+/*A div occupies the maximum horizontal space. An inline block allows to put two divs side-by-side.*/
 }
 
 .personal-info-item .key p,
@@ -133,14 +133,8 @@ width: 60%;
 #my-profile h2, h3 {
   color:#7B8C89
 }
-/*-------------RESUME-----------*/
 
-
-/*-------------------END RESUME--------*/
-
-
-
-/*---------------------------CONTACT PAGE ----*/
+/* ---------------------------------CONTACT PAGE ------------------------ */
 
  footer { 
     background-color: /*#525252;*/#333333;
@@ -151,23 +145,17 @@ width: 60%;
  }
 
 
-/*footer .container {
-  padding: 40px 170px;
-  }
-  putting this rule in the body instad*/
-
-
 #contact {
-  padding-bottom: 190px;
+  padding-bottom: 53.328px;
 }
 
 #contact a {
     margin-bottom: 1.333em;
 }
 
-.contact-item {
+/*.contact-item {
     font-weight: 200;
-}
+}*/
 
 /*#contact h2 {
   font-size: 50px;
@@ -200,47 +188,66 @@ color: #fff;
   padding-top: 25px;
 }*/
 
-.contactrow .no-bullets {
+/*.contactrow .no-bullets {
     list-style-type: none;
     padding: 0px;
-}
+}*/
 
-#contact a {
-  display: block;
-  /* A block has some whitespace above and below it and tolerates no HTML elements next to it, except when ordered otherwise (by adding a float declaration to another element, for instance)*/
+/*#contact a {
+  display: table-cell;
   /*margin-bottom: 18px;*/
-  /* Why doesn't margin bottom display 18 px without first adding display: block? */
+  /* Why doesn't margin bottom display 18 px without first adding display: block? 
   line-height: 200%;
-  /*The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element.*/
+  /*The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element.
   opacity: 0.7; 
-}
+}*/
 
 #contact a i {
 margin-right: 10px;
 /* creates space between the icon and the text */
-font-size: 24px;
+font-size: 30px;
 }
 
-.contactrow {
+/*.contactrow {
     margin-right: -15px!important;
     margin-left: -15px!important;
 }
+*/
 
-@media (min-width: 992px)
-.col-md-6 {
-    width: 50%;
+#contact .contactrow a:hover { 
+    opacity: 1; 
+    text-decoration: none;
+}
+/*text-decoration set to none, otherwise the underline appears on hover*/
+
+
+/*to center content text-align parent, while inline block child*/
+
+.contactrow .inline-list {
+text-align: center;
 }
 
-#contact a:hover { opacity: 1; text-decoration: none; 
-/*text-decoration set to none, otherwise the underline appears on hover*/
-} 
+.contactrow .inline-list li {
+display: inline-block;
+}
 
-/*------END CONTACT PAGE -----*/
+#contact .contactrow a {
+color: #fff;
+opacity: 0.6;
+padding: /*0 0.25em;*/ 10px 15px;
+}
 
-/* ----RESUME PAGE ---*/
+@media (max-width: 767px) {
+    #contact .contactrow a {
+padding: 0 0.25em;
+font-size: 28px;
+}
+}
+
+/* --------------------------RESUME PAGE -----------------------------*/
 
 .background-color-green {
-  background-color:#B4CCC8;
+  background-color:/*#B4CCC8*/ #F2EEDF;
 }
 
 #my-resume .resume > div {
@@ -370,11 +377,13 @@ width:250px;
     font-weight: 700;
 }
 
+@media (min-width: 992px) { 
 .navbar-collapse{
     /*position:absolute;*/
     top:50%;
     margin-top:-25%;
     bottom: 0;
+}
 }
 
 @media (min-width: 992px) { 
@@ -410,6 +419,7 @@ width:250px;
     height: auto !important;
     padding: 0 20px;
     width: 100%;
+    text-align: center;
 }
 }
 
@@ -437,10 +447,6 @@ width:250px;
     display: block;
 }
 
-.navbar-collapse.show {
-    overflow-y: auto;
-}
-
 
 .resume {
  margin-bottom: 20px;
@@ -460,4 +466,16 @@ width:250px;
 .maggy-nav a:hover {
     text-decoration: none;
     color: #FF7DC0;
+}
+
+@media (max-width: 767px) {
+.collapse {
+    display: none; 
+}
+}
+
+.copyright p {
+    padding-top: 110px;
+    opacity: 0.3;
+    font-size: 14px;
 }
