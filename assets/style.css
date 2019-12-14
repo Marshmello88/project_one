@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+
 html { 
   font-size:100%; 
   } 
@@ -28,6 +29,7 @@ h2 {
   font-size: 3.125rem;
   font-weight: 300;
   margin-bottom: 25px;
+  /*color: #e1a87a;*/
 }
 
 h3 {
@@ -45,9 +47,10 @@ h5 {
 }
 
 hr { 
-  margin: 35px 0px;
+  margin: 35px auto;
   border-color: #7D7880; 
-  opacity: 0.3;
+  opacity: 0.2;
+  width: 70%;
  }
 
 footer {
@@ -72,6 +75,7 @@ margin-bottom: 0px;
     margin-top: 50px;
     color: #ffffff;
     text-align: center;
+    /*text-transform: uppercase;*/
 }
 
 .jumbotron .name p {
@@ -131,13 +135,13 @@ width: 60%;
     /*.parent-class > .child-class*/
 
 #my-profile h2, h3 {
-  color:#7B8C89
+  color:#7B8C89;
 }
 
 /* ---------------------------------CONTACT PAGE ------------------------ */
 
  footer { 
-    background-color: /*#525252;*/#333333;
+    background-color: /*#333333;*/ /*#121212;*/ #2F3133;
     color: #fafafa;
     /*min-height: 120px;*/
     /*So it can grow beyond 120px if for some reason the about us text extends or pushes beyond that*/
@@ -146,7 +150,7 @@ width: 60%;
 
 
 #contact {
-  padding-bottom: 53.328px;
+  padding-bottom: 40px;
 }
 
 #contact a {
@@ -215,7 +219,7 @@ font-size: 30px;
 */
 
 #contact .contactrow a:hover { 
-    opacity: 1; 
+    opacity: 0.4; 
     text-decoration: none;
 }
 /*text-decoration set to none, otherwise the underline appears on hover*/
@@ -233,21 +237,18 @@ display: inline-block;
 
 #contact .contactrow a {
 color: #fff;
-opacity: 0.6;
-padding: /*0 0.25em;*/ 10px 15px;
+opacity: 0.9;
+padding: 10px 15px;
 }
 
-@media (max-width: 767px) {
-    #contact .contactrow a {
-padding: 0 0.25em;
-font-size: 28px;
-}
-}
+/*0 0.25em;*/
+
+
 
 /* --------------------------RESUME PAGE -----------------------------*/
 
 .background-color-green {
-  background-color:/*#B4CCC8*/ #F2EEDF;
+  background-color:/*#B4CCC8 #F2EEDF;*/ #F9F4ED;
 }
 
 #my-resume .resume > div {
@@ -332,10 +333,12 @@ margin-right: 20px;
     top: 0px;
 }
 
+@media (min-width: 992px) { 
 .maggy-nav {
 right:25px;
 width:250px;
 /* moves the navbar to the right hand side*/
+}
 }
 
 .maggy-nav {
@@ -380,8 +383,8 @@ width:250px;
 @media (min-width: 992px) { 
 .navbar-collapse{
     /*position:absolute;*/
-    top:50%;
-    margin-top:-25%;
+    /*top:50%;*/
+    /*margin-top:-25%;*/
     bottom: 0;
 }
 }
@@ -465,7 +468,7 @@ width:250px;
 
 .maggy-nav a:hover {
     text-decoration: none;
-    color: #FF7DC0;
+    color: #C21841;
 }
 
 @media (max-width: 767px) {
@@ -474,8 +477,65 @@ width:250px;
 }
 }
 
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-top: 4px;
+}
+
+@media (max-width: 767px) {
+.icon-bar {
+    background-color: /*#C2135B;*/ #C21841;
+}
+}
+
 .copyright p {
     padding-top: 110px;
-    opacity: 0.3;
+    color: #7a7d7f;
     font-size: 14px;
 }
+
+.copyright .myname {
+    color: #e1a87a;
+}
+
+@media (max-width: 767px) {
+    .contactrow .inline-list {
+padding: 0;
+    }
+}
+
+/*.maggy-nav .brandletter {
+    background-color: transparent;
+}*/
+
+.navbar-brand>img {
+    display: block;
+}
+
+.navbar-brand {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+   /*height: auto;
+    float: none;*/
+    position: absolute;
+    top: 16%;
+    left: 0;
+    right: 0;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-brand {
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
