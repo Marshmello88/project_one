@@ -108,11 +108,19 @@ margin: 0;
 }
 
 .personal-info-item .key {
-width: 30%;
 margin-right: 21px;
 padding-top: 2px;
 vertical-align: top;
 /*Vertical-align to top so that it hugs the top of the <div> as much as possible.*/
+}
+
+.linksprofile {
+    color:#212529;
+}
+
+.linksprofile:hover {
+    text-decoration: none;
+    color:#e1a87a;
 }
 
 .personal-info-item .key p {
@@ -289,7 +297,6 @@ margin-right: 20px;
 
 /*// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { ... }*/
 
@@ -456,7 +463,7 @@ width:250px;
  margin-bottom: 20px;
 }
 
-/*@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 .resume {
  margin-left: -15px!important;
 }*/
@@ -472,7 +479,7 @@ width:250px;
     color: #C21841;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {
 .collapse {
     display: none; 
 }
