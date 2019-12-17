@@ -1,467 +1,425 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
-
-
-html { 
-  font-size:100%; 
-  } 
-
-.jumborow, .row {
-    margin-right: 0px!important;
-    margin-left: 0px!important;
+html {
+	font-size: 100%;
 }
 
+.jumborow,
+.row {
+	margin-right: 0px!important;
+	margin-left: 0px!important;
+}
 
 .container-fluid {
-padding-left: 0px;
-padding-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 body {
-    font-family: 'Exo', sans-serif;
-    font-size: 0.938em;
-    background: #fff;
-	margin:0;
-	padding:0;
+	font-family: 'Exo', sans-serif;
+	font-size: 0.938em;
+	background: #fff;
+	margin: 0;
+	padding: 0;
 }
- 
 
 h2 {
-  font-size: 3.125rem;
-  font-weight: 300;
-  margin-bottom: 25px;
-  /*color: #e1a87a;*/
+	font-size: 3.125rem;
+	font-weight: 300;
+	margin-bottom: 25px;
+	/*color: #e1a87a;*/
 }
 
 h3 {
-    margin-bottom: 1.250em
+	margin-bottom: 1.250em
 }
 
 h5 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .my_custom_margin_padding {
-/*max-width: 1280px;*/
-  padding-right: 300px;
-  padding: 3.333rem 11.33rem;
+	/*max-width: 1280px;*/
+	padding-right: 300px;
+	padding: 3.333rem 11.33rem;
 }
 
-hr { 
-  margin: 35px auto;
-  border-color: #7D7880; 
-  opacity: 0.2;
-  width: 70%;
- }
+hr {
+	margin: 35px auto;
+	border-color: #7D7880;
+	opacity: 0.2;
+	width: 70%;
+}
 
 footer {
-    width:100%;
+	width: 100%;
 }
+
 
 /*--------LANDING PAGE-----*/
 
 #landing-page {
-background: no-repeat center right fixed url("https://wallpaperaccess.com/full/439038.jpg");
-background-size: cover;
-height: 100vh;
-width: 100vw;
-margin-bottom: 0px;
+	background: no-repeat center right fixed url("https://wallpaperaccess.com/full/439038.jpg");
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	margin-bottom: 0px;
 }
 
-
 .jumbotron .name h1 {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    font-size: 3.75rem;
-    margin-top: 50px;
-    color: #ffffff;
-    text-align: center;
-    /*text-transform: uppercase;*/
+	font-family: "Exo", sans-serif;
+	font-weight: 300;
+	font-size: 3.75rem;
+	margin-top: 50px;
+	color: #ffffff;
+	text-align: center;
 }
 
 .jumbotron .name p {
-    font-family: "Exo", sans-serif;
-    font-size: 1.75rem;
-    color: #ffffff;
-    text-align: center;
-    font-weight: 300;
+	font-family: "Exo", sans-serif;
+	font-size: 1.75rem;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 300;
 }
+
 
 /* -------------------------Personal Information------------------*/
 
 .personal-info-item {
-margin-bottom: 1.333em;
-display: block;
-/* so it will start and end with a new line and occupy the entirety of the horizontal space */
-clear: both;
-/* Clear to both so that no other items can appear at either side of it in case we were using floats*/
+	margin-bottom: 1.333em;
+	display: block;
+	/* so it will start and end with a new line and occupy the entirety of the horizontal space */
+	clear: both;
+	/* Clear to both so that no other items can appear at either side of it in case we were using floats*/
 }
 
 .personal-info-item .key,
 .personal-info-item .value {
-display: inline-block;
-/*A div occupies the maximum horizontal space. An inline block allows to put two divs side-by-side.*/
+	display: inline-block;
+	/*A div occupies the maximum horizontal space. An inline block allows to put two divs side-by-side.*/
 }
 
 .personal-info-item .key p,
 .personal-info-item .value p {
-margin: 0;
+	margin: 0;
 }
 
 .personal-info-item .key {
-margin-right: 21px;
-padding-top: 2px;
-vertical-align: top;
-/*Vertical-align to top so that it hugs the top of the <div> as much as possible.*/
+	margin-right: 21px;
+	padding-top: 2px;
+	vertical-align: top;
+	/*Vertical-align to top so that it hugs the top of the <div> as much as possible.*/
 }
 
 .linksprofile {
-    color:#212529;
+	color: #212529;
 }
 
 .linksprofile:hover {
-    text-decoration: none;
-    color:#e1a87a;
+	text-decoration: none;
+	color: #e1a87a;
 }
 
 .personal-info-item .key p {
-font-weight: 700;
+	font-weight: 700;
 }
 
 .personal-info-item .value {
-position: relative;
-width: 60%;
-/*This will combine to 90% and still allow for some breathing space on either side of the key value pairing.*/
+	position: relative;
+	width: 60%;
 }
 
 .catface {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
-#my-profile .row > div { 
-    margin-bottom: 30px; 
-    }
-    /*.parent-class > .child-class*/
-
-#my-profile h2, h3 {
-  color:#7B8C89;
+#my-profile .row>div {
+	margin-bottom: 30px;
 }
+
+
+/*.parent-class > .child-class*/
+
+#my-profile h2,
+h3 {
+	color: #7B8C89;
+}
+
 
 /* ---------------------------------CONTACT PAGE ------------------------ */
 
- footer { 
-    background-color: /*#333333;*/ /*#121212;*/ #2F3133;
-    color: #fafafa;
-    /*min-height: 120px;*/
-    /*So it can grow beyond 120px if for some reason the about us text extends or pushes beyond that*/
-    margin: 0;
- }
-
+footer {
+	background-color: #2F3133;
+	color: #fafafa;
+	margin: 0;
+}
 
 #contact {
-  padding-bottom: 40px;
+	padding-bottom: 40px;
 }
 
 #contact a {
-    margin-bottom: 1.333em;
+	margin-bottom: 1.333em;
 }
-
-/*.contact-item {
-    font-weight: 200;
-}*/
-
-/*#contact h2 {
-  font-size: 50px;
-  font-weight: 300;
-  margin-bottom: 25px;
-}*/
 
 #contact .quote,
 #my-profile .quote,
 #my-resume .quote {
- font-size: 1.25rem;
- opacity: 0.4; 
- font-weight: 200;
- /*margin-bottom: 25px;*/
+	font-size: 1.25rem;
+	opacity: 0.4;
+	font-weight: 200;
+    font-style: italic;
 }
 
 #my-profile .quote,
 #my-resume .quote {
-  opacity: 1; 
+	opacity: 1;
 }
+
 
 /* Link items */
 
-#contact .row *{
-color: #fff;
-/*It means apply those styles to all elements. Could not change the color of the links otherwise. How to achieve it without the "*" symbol?*/
+#contact .row * {
+	color: #fff;
+	/*It means apply those styles to all elements. Could not change the color of the links otherwise. How to achieve it without the "*" symbol?*/
 }
-
-/*#contact .row {
-  padding-top: 25px;
-}*/
-
-/*.contactrow .no-bullets {
-    list-style-type: none;
-    padding: 0px;
-}*/
-
-/*#contact a {
-  display: table-cell;
-  /*margin-bottom: 18px;*/
-  /* Why doesn't margin bottom display 18 px without first adding display: block? 
-  line-height: 200%;
-  /*The line-height CSS property sets the height of a line box. It's commonly used to set the distance between lines of text. On block-level elements, it specifies the minimum height of line boxes within the element.
-  opacity: 0.7; 
-}*/
 
 #contact a i {
-margin-right: 10px;
-/* creates space between the icon and the text */
-font-size: 30px;
+	margin-right: 10px;
+	/* creates space between the icon and the text */
+	font-size: 30px;
 }
 
-/*.contactrow {
-    margin-right: -15px!important;
-    margin-left: -15px!important;
+#contact .contactrow a:hover {
+	opacity: 0.4;
+	text-decoration: none;
 }
-*/
 
-#contact .contactrow a:hover { 
-    opacity: 0.4; 
-    text-decoration: none;
-}
+
 /*text-decoration set to none, otherwise the underline appears on hover*/
 
 
 /*to center content text-align parent, while inline block child*/
 
 .contactrow .inline-list {
-text-align: center;
+	text-align: center;
 }
 
 .contactrow .inline-list li {
-display: inline-block;
+	display: inline-block;
 }
 
 #contact .contactrow a {
-color: #fff;
-opacity: 0.9;
-padding: 10px 15px;
+	color: #fff;
+	opacity: 0.9;
+	padding: 10px 15px;
 }
 
-/*0 0.25em;*/
 
+/*0 0.25em;*/
 
 
 /* --------------------------RESUME PAGE -----------------------------*/
 
 .background-color-green {
-  background-color:/*#B4CCC8 #F2EEDF;*/ #F9F4ED;
+	background-color: /*#B4CCC8 #F2EEDF;*/
+	#F9F4ED;
 }
 
-#my-resume .resume > div {
-margin-bottom: 15px;
+#my-resume .resume>div {
+	margin-bottom: 15px;
 }
-
-/*.background-color-green h2 {
-  padding-top: 40px;
-}*/
-
-/*.resume {
-  margin-bottom: 20px;
-}*/
 
 .resume h5,
 .location {
-color:#434D4B;
+	color: #434D4B;
 }
-
-/*.resume p strong {
-  margin-bottom: .5rem;
-} why is this not working?*/
 
 #my-resume .row i {
-margin-right: 20px;
-/* creates space between the icon and the text */
+	margin-right: 20px;
+	/* creates space between the icon and the text */
 }
+
+.downloadrow {
+	padding-top: 20px;
+}
+
+.downloadrow .mydownload {
+	color: #e1a87a;
+	font-weight: 500;
+}
+
+.downloadrow a {
+	color: #e1a87a;
+}
+
+.downloadrow a i {
+	font-size: 20px;
+}
+
+.downloadrow a:hover {
+	color: #C21841;
+	text-decoration: none;
+}
+
+@media (min-width: 992px) {
+	.resume {
+		width: 90%;
+	}
+}
+
 
 /*-----------MEDIA QUERIES----------*/
 
-
-
 @media (max-width: 992px) {
-  #landing-page{
-        background-attachment: scroll;
-    }
-}
-
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }*/
-
-/*
-@media (min-width: 992px) { 
-    .my_custom_margin_padding {
-  padding: 3.333rem 11.33rem;
-}*
- }*/
-
-/*Large devices (desktops, 992px and up)
- @media (min-width: 992px)
-..my_custom_margin_padding {
-    width: 970px;
-}*/
-
-/*Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .my_custom_margin_padding {
-  padding: 3.333rem 11.33rem;
-}
- }*/
-
- @media (max-width: 767px) {
-#my-profile .row * {
-    text-align: center;
-}
+	#landing-page {
+		background-attachment: scroll;
+	}
 }
 
 @media (max-width: 767px) {
-.my_custom_margin_padding {
-    padding: 60px 20px;
-    min-width: 280px;
-    /*gives more padding on small screen*/
+	#my-profile .row * {
+		text-align: center;
+	}
 }
+
+@media (max-width: 767px) {
+	.my_custom_margin_padding {
+		padding: 60px 20px;
+		min-width: 280px;
+		/*gives more padding on small screen*/
+	}
 }
 
 
 /* ----------- NAVIGATION BAR -------- */
+
 .navbar {
-    top: 0px;
-}
-
-@media (min-width: 992px) { 
-.maggy-nav {
-right:25px;
-width:250px;
-/* moves the navbar to the right hand side*/
-}
-}
-
-.maggy-nav {
-    position: fixed;
-    background-color:rgba(17,17,17,.7);
-    border-radius: 0;
-    margin: 0;
-    padding: 20px;
-    z-index: 20;
-}
-
-.navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
-
-.nav {
-    display: block;
-    /* this is to overwrite flex*/
-}
-
-.nav li a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-}
-
-.maggy-nav a {
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 700;
-}
-
-@media (min-width: 992px) { 
-.navbar-collapse{
-    /*position:absolute;*/
-    /*top:50%;*/
-    /*margin-top:-25%;*/
-    bottom: 0;
-}
-}
-
-@media (min-width: 992px) { 
-.navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible; /*this section makes the dropdown menu visible*/
-}
-}
-
-
-.maggy-nav .nav {
-    text-align: center;
-}
-
-
-#my-nav {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-
-@media (max-width: 767px) {
-.navbar-toggle {
-    background-color: #fff;
-    left: 75vw; /*float does not work in flex container*/
-}
-}
-
-@media (max-width: 767px) {
-.maggy-nav {
-    height: auto !important;
-    padding: 0 20px;
-    width: 100%;
-    text-align: center;
-}
-}
-
-@media (max-width: 767px) {
-.navbar-toggle {
-    background-color: #fff;
-    margin-top: 16px;
-}
+	top: 0px;
 }
 
 @media (min-width: 992px) {
-.navbar-toggle {
-    display: none;
-}
+	.maggy-nav {
+		right: 25px;
+		width: 250px;
+		/* moves the navbar to the right hand side*/
+	}
 }
 
+.maggy-nav {
+	position: fixed;
+	background-color: rgba(17, 17, 17, .6);
+	border-radius: 0;
+	margin: 0;
+	padding: 20px;
+	z-index: 20;
+}
+
+.navbar-toggle {
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-top: 8px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	left: 75vw;
+}
+
+.nav {
+	display: block;
+	/* this is to overwrite flex*/
+}
+
+.nav li a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+
+.maggy-nav a {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+}
+
+/* @media (min-width: 992px) { */
+@media (min-width: 1024px) {
+	.navbar-collapse {
+		/*position:absolute;*/
+		/*top:50%;*/
+		/*margin-top:-25%;*/
+		bottom: 0;
+	}
+}
+
+/* @media (min-width: 992px) { */
+@media (min-width: 1024px) {
+	.navbar-collapse.collapse {
+		display: block !important;
+		height: auto !important;
+		padding-bottom: 0;
+		overflow: visible;
+	}
+}
+
+.maggy-nav .nav {
+	text-align: center;
+}
+
+#my-nav {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+@media (max-width: 767px) {
+	.navbar-toggle {
+		background-color: #fff;
+		left: 75vw;
+		/*float does not work in flex container*/
+	}
+}
+
+@media (max-width: 767px) {
+	.maggy-nav {
+		height: auto !important;
+		padding: 0 20px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-toggle {
+		background-color: #fff;
+		margin-top: 16px;
+	}
+}
+
+/* @media (min-width: 992px) {
+	.navbar-toggle {
+		display: none;
+	}
+} */
+
 .navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
 }
 
 .collapse.show {
-    display: block;
+	display: block;
 }
-
 
 .resume {
- margin-bottom: 20px;
+	margin-bottom: 20px;
 }
+
 
 /*@media (max-width: 767px) {
 .resume {
@@ -469,109 +427,239 @@ width:250px;
 }*/
 
 #my-resume .locationfont {
-    font-weight: 500;
-    padding-left: 4px;
+	font-weight: 500;
+	padding-left: 4px;
 }
 
-
 .maggy-nav a:hover {
-    text-decoration: none;
-    color: #C21841;
+	text-decoration: none;
+	color: #C21841;
 }
 
 @media (max-width: 767px) {
-.collapse {
-    display: none; 
-}
+	.collapse {
+		display: none;
+	}
 }
 
 .navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-    margin-top: 4px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	margin-top: 4px;
 }
 
 @media (max-width: 767px) {
-.icon-bar {
-    background-color: /*#C2135B;*/ #C21841;
-}
+	.icon-bar {
+		background-color: /*#C2135B;*/
+		#C21841;
+	}
 }
 
 .copyright p {
-    padding-top: 110px;
-    color: #7a7d7f;
-    font-size: 14px;
+	padding-top: 110px;
+	color: #7a7d7f;
+	font-size: 14px;
 }
 
 .copyright .myname {
-    color: #e1a87a;
+	color: #e1a87a;
 }
 
 @media (max-width: 767px) {
-    .contactrow .inline-list {
-padding: 0;
-    }
+	.contactrow .inline-list {
+		padding: 0;
+	}
 }
 
-/*.maggy-nav .brandletter {
-    background-color: transparent;
-}*/
-
 .navbar-brand>img {
-    display: block;
+	display: block;
 }
 
 .navbar-brand {
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-   /*height: auto;
+	width: 70%;
+	margin: 0 auto;
+	display: block;
+	/*height: auto;
     float: none;*/
-    position: absolute;
-    top: 16%;
-    left: 0;
-    right: 0;
+	position: absolute;
+	top: 16%;
+	left: 0;
+	right: 0;
 }
 
 .img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .navbar-brand {
-    padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px;
 }
 
-@media (max-width: 767px) {
-.navbar-toggle  {
-    margin-left: auto;
-    /*justify-content: flex-end;*/
-}
+
+/*ipad portrait query*/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.my_custom_margin_padding {
+		padding-right: 0px!important;
+		padding: 15px 0!important;
+		margin: 50px;
+	}
 }
 
-.downloadrow {
-    padding-top: 20px;
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.navbar-toggle {
+		left: 80vw;
+		background-color: #fff;
+		margin-top: 16px;
+	}
 }
 
-.downloadrow .mydownload {
-    color:#e1a87a;
-    font-weight: 500;
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.maggy-nav {
+		height: auto !important;
+		padding: 10px 20px;
+		width: 100%;
+		text-align: center;
+	}
 }
 
-.downloadrow a {
-    color:#e1a87a;
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.icon-bar {
+		background-color: #C21841;
+	}
 }
 
-.downloadrow a i {
-    font-size: 20px;
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	.navbar-brand img {
+		display: none;
+	}
 }
 
-.downloadrow a:hover { 
-    color: #C21841; 
-    text-decoration: none;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.my_custom_margin_padding {
+		padding-right: 0px!important;
+		padding: 30px 0!important;
+		margin: 50px 80px;
+	}
+}
+
+
+/* ipad pro portrait query*/
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.navbar-toggle {
+		left: 80vw;
+		background-color: #fff;
+		margin-top: 16px;
+	}
+}
+
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+	.maggy-nav {
+		height: auto !important;
+		padding: 10px 20px;
+		width: 100%;
+		text-align: center;
+		right: 0;
+	}
+}
+
+/*iPhone X in landscape*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+	.my_custom_margin_padding {
+		padding-right: 0px!important;
+		padding: 15px 0!important;
+		margin: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+	.my_custom_margin_padding {
+		padding-right: 0px!important;
+		padding: 15px 0!important;
+		margin: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+	.navbar-toggle {
+		left: 80vw;
+		background-color: #fff;
+		margin-top: 5px;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+	.maggy-nav {
+		height: auto !important;
+		padding: 3px 20px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+	.icon-bar {
+		background-color: #C21841;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+	.navbar-brand img {
+		display: none;
+	}
+}
+
+
+/*pixel 2 XP Landscape*/
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+	.my_custom_margin_padding {
+		padding-right: 0px!important;
+		padding: 15px 0!important;
+		margin: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+	.my_custom_margin_padding {
+		padding-right: 0px!important;
+		padding: 15px 0!important;
+		margin: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+	.navbar-toggle {
+		left: 80vw;
+		background-color: #fff;
+		margin-top: 5px;
+	}
+}
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+	.maggy-nav {
+		height: auto !important;
+		padding: 3px 20px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+	.icon-bar {
+		background-color: #C21841;
+	}
+}
+
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
+	.navbar-brand img {
+		display: none;
+	}
 }
