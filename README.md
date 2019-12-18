@@ -61,7 +61,8 @@ https://wallpaperaccess.com/full/439038.jpg.
 # Acknowledgement
 The navigation bar was modeled after the example found on the following website:
 1. https://oneoneriga.lv/. 
-I have used the following resume websites as examples for the structure of my own website:
+The following pages were used as examples for the structure of my own website, as such some of the code from these pages has been used 
+and edited for my own purposes.
 1. Grade 5 example from the milestone project module for wireframing ideas.
 2. http://www.pascalvangemert.nl/ 
 I have also recycled some code in the about-me section from the Mini Resume Project with Bootstrap 4.
