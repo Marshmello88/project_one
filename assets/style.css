@@ -28,7 +28,6 @@ h2 {
   font-size: 3.125rem;
   font-weight: 300;
   margin-bottom: 25px;
-  /*color: #e1a87a;*/
 }
 
 h3 {
@@ -217,8 +216,7 @@ footer {
 /* ------------------------------------------------------------RESUME PAGE --------------------------------------------------------------*/
 
 .background-color-green {
-  background-color: /*#B4CCC8 #F2EEDF;*/
-  #F9F4ED;
+  background-color: #F9F4ED;
 }
 
 #my-resume .resume>div {
@@ -377,8 +375,6 @@ footer {
   width: 70%;
   margin: 0 auto;
   display: block;
-  /*height: auto;
-    float: none;*/
   position: absolute;
   top: 16%;
   left: 0;
@@ -386,7 +382,6 @@ footer {
 }
 
 .img-responsive {
-  /*display: block;*/
   max-width: 100%;
   height: auto;
 }
@@ -408,7 +403,6 @@ footer {
 
 
 @media screen and (max-width: 823px) {
-  /* @media (max-width: 767px) {*/
   .navbar-toggle {
     background-color: #fff;
     left: 75vw;
@@ -432,8 +426,7 @@ footer {
   }
 
   .icon-bar {
-    background-color: /*#C2135B;*/
-    #C21841;
+    background-color:#C21841;
   }
 
   .navbar-brand img {
@@ -441,9 +434,6 @@ footer {
   }
 }
 
-
-
-/* @media (min-width: 992px) { */
 
 @media screen and (min-width: 1024px) {
   .navbar-collapse {
@@ -455,7 +445,6 @@ footer {
   }
 
   .navbar-collapse.collapse {
-    /*display: block !important; */
     height: auto !important;
     padding-bottom: 0;
     overflow: visible;
