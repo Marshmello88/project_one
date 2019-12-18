@@ -64,7 +64,7 @@ The following pages were used as examples for the structure of my own website, a
 and edited for my own purposes.
 1. Grade 5 example from the milestone project module for wireframing ideas.
 2. http://www.pascalvangemert.nl/ 
-I have also recycled some code in the about-me section from the Mini Resume Project with Bootstrap 4.
+3. I have also recycled some code in the about-me section from the Mini Resume Project with Bootstrap 4.
 
 
 This is for educational use.
