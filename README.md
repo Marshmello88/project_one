@@ -47,7 +47,7 @@ This issue will be addressed in the future.
 
 
 # Deployment
-This site is hosted using GitHub pages: https://github.com/Marshmello88/project_one 
+This site is hosted using GitHub pages: https://marshmello88.github.io/project_one/
 Any further updates will be automatically applied whenever the local changes are pushed to the remote GitHub-hosted repo. 
 After this, the GitHub site should update within a few seconds. 
 
@@ -68,3 +68,5 @@ I have also recycled some code in the about-me section from the Mini Resume Proj
 
 
 This is for educational use.
+
+Maggy =(@____@)=
