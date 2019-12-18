@@ -12,7 +12,7 @@ CSS
 Bootstrap 
 
 # Demo:
-![Website screenshot](/assets/images/screenshot.jpg)
+![Website screenshot](/assets/images/screenshot.jpg?raw=true)
 
 # UX:
 My goal was to make a simple resume website that would showcase my education and experience, as well as give a small impression of 
