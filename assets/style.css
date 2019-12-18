@@ -3,6 +3,7 @@ html {
 	font-size: 100%;
 }
 
+/* --------------------------------------General styles-------------------------------- */
 .jumborow,
 .row {
 	margin-right: 0px!important;
@@ -38,7 +39,6 @@ h5 {
 }
 
 .my_custom_margin_padding {
-	/*max-width: 1280px;*/
 	padding-right: 300px;
 	padding: 3.333rem 11.33rem;
 }
@@ -55,7 +55,7 @@ footer {
 }
 
 
-/*--------LANDING PAGE-----*/
+/* --------------------------------------------LANDING PAGE---------------------------------------------------------- */
 
 #landing-page {
 	background: no-repeat center right fixed url("https://wallpaperaccess.com/full/439038.jpg");
@@ -83,7 +83,7 @@ footer {
 }
 
 
-/* -------------------------Personal Information------------------*/
+/* -------------------------------------------Personal Information-----------------------------------*/
 
 .personal-info-item {
 	margin-bottom: 1.333em;
@@ -137,7 +137,6 @@ footer {
 	margin-bottom: 30px;
 }
 
-
 /*.parent-class > .child-class*/
 
 #my-profile h2,
@@ -146,7 +145,7 @@ h3 {
 }
 
 
-/* ---------------------------------CONTACT PAGE ------------------------ */
+/* ---------------------------------------------------CONTACT PAGE ------------------------------------------------------- */
 
 footer {
 	background-color: #2F3133;
@@ -181,7 +180,7 @@ footer {
 
 #contact .row * {
 	color: #fff;
-	/*It means apply those styles to all elements. Could not change the color of the links otherwise. How to achieve it without the "*" symbol?*/
+	/* It means apply those styles to all elements. Could not change the color of the links otherwise. How to achieve it without the "*" symbol? */
 }
 
 #contact a i {
@@ -195,9 +194,7 @@ footer {
 	text-decoration: none;
 }
 
-
 /*text-decoration set to none, otherwise the underline appears on hover*/
-
 
 /*to center content text-align parent, while inline block child*/
 
@@ -216,14 +213,10 @@ footer {
 }
 
 
-/*0 0.25em;*/
-
-
-/* --------------------------RESUME PAGE -----------------------------*/
+/* ------------------------------------------------------------RESUME PAGE --------------------------------------------------------------*/
 
 .background-color-green {
-	background-color: /*#B4CCC8 #F2EEDF;*/
-	#F9F4ED;
+	background-color: /*#B4CCC8 #F2EEDF;*/#F9F4ED;
 }
 
 #my-resume .resume>div {
@@ -262,49 +255,14 @@ footer {
 	text-decoration: none;
 }
 
-@media (min-width: 992px) {
-	.resume {
-		width: 90%;
-	}
-}
 
-
-/*-----------MEDIA QUERIES----------*/
-
-@media (max-width: 992px) {
-	#landing-page {
-		background-attachment: scroll;
-	}
-}
-
-@media (max-width: 767px) {
-	#my-profile .row * {
-		text-align: center;
-	}
-}
-
-@media (max-width: 767px) {
-	.my_custom_margin_padding {
-		padding: 60px 20px;
-		min-width: 280px;
-		/*gives more padding on small screen*/
-	}
-}
-
-
-/* ----------- NAVIGATION BAR -------- */
+/* ------------------------------------------------------- NAVIGATION BAR ------------------------------------------------------- */
 
 .navbar {
 	top: 0px;
 }
 
-@media (min-width: 992px) {
-	.maggy-nav {
-		right: 25px;
-		width: 250px;
-		/* moves the navbar to the right hand side*/
-	}
-}
+
 
 .maggy-nav {
 	position: fixed;
@@ -346,25 +304,7 @@ footer {
 	font-weight: 700;
 }
 
-/* @media (min-width: 992px) { */
-@media (min-width: 1024px) {
-	.navbar-collapse {
-		/*position:absolute;*/
-		/*top:50%;*/
-		/*margin-top:-25%;*/
-		bottom: 0;
-	}
-}
 
-/* @media (min-width: 992px) { */
-@media (min-width: 1024px) {
-	.navbar-collapse.collapse {
-		display: block !important;
-		height: auto !important;
-		padding-bottom: 0;
-		overflow: visible;
-	}
-}
 
 .maggy-nav .nav {
 	text-align: center;
@@ -375,35 +315,7 @@ footer {
 	margin-left: 0;
 }
 
-@media (max-width: 767px) {
-	.navbar-toggle {
-		background-color: #fff;
-		left: 75vw;
-		/*float does not work in flex container*/
-	}
-}
 
-@media (max-width: 767px) {
-	.maggy-nav {
-		height: auto !important;
-		padding: 0 20px;
-		width: 100%;
-		text-align: center;
-	}
-}
-
-@media (max-width: 767px) {
-	.navbar-toggle {
-		background-color: #fff;
-		margin-top: 16px;
-	}
-}
-
-/* @media (min-width: 992px) {
-	.navbar-toggle {
-		display: none;
-	}
-} */
 
 .navbar-toggle .icon-bar {
 	display: block;
@@ -421,10 +333,6 @@ footer {
 }
 
 
-/*@media (max-width: 767px) {
-.resume {
- margin-left: -15px!important;
-}*/
 
 #my-resume .locationfont {
 	font-weight: 500;
@@ -436,11 +344,7 @@ footer {
 	color: #C21841;
 }
 
-@media (max-width: 767px) {
-	.collapse {
-		display: none;
-	}
-}
+
 
 .navbar-toggle .icon-bar {
 	display: block;
@@ -450,12 +354,6 @@ footer {
 	margin-top: 4px;
 }
 
-@media (max-width: 767px) {
-	.icon-bar {
-		background-color: /*#C2135B;*/
-		#C21841;
-	}
-}
 
 .copyright p {
 	padding-top: 110px;
@@ -467,11 +365,7 @@ footer {
 	color: #e1a87a;
 }
 
-@media (max-width: 767px) {
-	.contactrow .inline-list {
-		padding: 0;
-	}
-}
+
 
 .navbar-brand>img {
 	display: block;
@@ -490,7 +384,7 @@ footer {
 }
 
 .img-responsive {
-	display: block;
+	/*display: block;*/
 	max-width: 100%;
 	height: auto;
 }
@@ -502,52 +396,135 @@ footer {
 }
 
 
-/*ipad portrait query*/
+/* ----------------------------------------------------------MEDIA QUERIES--------------------------------------------------- */
+@media (max-width: 767px) {
+	.contactrow .inline-list {
+		padding: 0;
+	}
+}
+
+
+@media screen and (max-width: 823px) {
+/* @media (max-width: 767px) {*/
+	.navbar-toggle {
+		background-color: #fff;
+		left: 75vw;
+		/*float does not work in flex container*/
+	}
+
+	.maggy-nav {
+		height: auto !important;
+		padding: 0 20px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.navbar-toggle {
+		background-color: #fff;
+		margin-top: 16px;
+	}
+
+	.collapse {
+		display: none;
+	}
+
+	.icon-bar {
+		background-color: /*#C2135B;*/
+		#C21841;
+	}
+
+    .navbar-brand img{
+		display: none;
+	}
+}
+
+
+
+/* @media (min-width: 992px) { */
+ @media screen and (min-width: 1024px) { 
+	.navbar-collapse {
+		bottom: 0;
+	}
+
+.collapse:not(.show) {
+    display: block; 
+}
+
+	.navbar-collapse.collapse {
+        /*display: block !important; */
+		height: auto !important;
+		padding-bottom: 0;
+		overflow: visible;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.maggy-nav {
+		right: 25px;
+		width: 250px;
+		/* moves the navbar to the right hand side*/
+	}
+
+	.resume {
+		width: 90%;
+	}
+}
+
+
+@media (max-width: 992px) {
+	#landing-page {
+		background-attachment: scroll;
+	}
+}
+
+@media (max-width: 767px) {
+	#my-profile .row * {
+		text-align: center;
+	}
+}
+
+
+@media (max-width: 823px) { 
+	.my_custom_margin_padding {
+		padding: 60px 30px;
+		min-width: 280px;
+		/*gives more padding on small screen*/
+	}
+}
+
+
+/*  DEVICE SPECIFIC  * /
+ /* ipad query */
+
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	.my_custom_margin_padding {
 		padding-right: 0px!important;
 		padding: 15px 0!important;
-		margin: 50px;
+		margin: 40px;
 	}
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	.navbar-toggle {
 		left: 80vw;
 		background-color: #fff;
 		margin-top: 16px;
 	}
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	.maggy-nav {
 		height: auto !important;
 		padding: 10px 20px;
 		width: 100%;
 		text-align: center;
 	}
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	.icon-bar {
 		background-color: #C21841;
 	}
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	.navbar-brand img {
 		display: none;
 	}
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-	.my_custom_margin_padding {
-		padding-right: 0px!important;
-		padding: 30px 0!important;
-		margin: 50px 80px;
-	}
-}
 
 
 /* ipad pro portrait query*/
@@ -557,9 +534,7 @@ footer {
 		background-color: #fff;
 		margin-top: 16px;
 	}
-}
 
-@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	.maggy-nav {
 		height: auto !important;
 		padding: 10px 20px;
@@ -567,99 +542,19 @@ footer {
 		text-align: center;
 		right: 0;
 	}
+
+.collapse:not(.show) {
+    display: none!important;
 }
 
-/*iPhone X in landscape*/
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-	.my_custom_margin_padding {
-		padding-right: 0px!important;
-		padding: 15px 0!important;
-		margin: 40px;
-	}
+.d-lg-block {
+    display: none!important;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-	.my_custom_margin_padding {
-		padding-right: 0px!important;
-		padding: 15px 0!important;
-		margin: 40px;
-	}
+.collapsing {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-	.navbar-toggle {
-		left: 80vw;
-		background-color: #fff;
-		margin-top: 5px;
-	}
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-	.maggy-nav {
-		height: auto !important;
-		padding: 3px 20px;
-		width: 100%;
-		text-align: center;
-	}
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-	.icon-bar {
-		background-color: #C21841;
-	}
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-	.navbar-brand img {
-		display: none;
-	}
-}
-
-
-/*pixel 2 XP Landscape*/
-
-@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
-	.my_custom_margin_padding {
-		padding-right: 0px!important;
-		padding: 15px 0!important;
-		margin: 40px;
-	}
-}
-
-@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
-	.my_custom_margin_padding {
-		padding-right: 0px!important;
-		padding: 15px 0!important;
-		margin: 40px;
-	}
-}
-
-@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
-	.navbar-toggle {
-		left: 80vw;
-		background-color: #fff;
-		margin-top: 5px;
-	}
-}
-
-@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
-	.maggy-nav {
-		height: auto !important;
-		padding: 3px 20px;
-		width: 100%;
-		text-align: center;
-	}
-}
-
-@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
-	.icon-bar {
-		background-color: #C21841;
-	}
-}
-
-@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: landscape) {
-	.navbar-brand img {
-		display: none;
-	}
 }
